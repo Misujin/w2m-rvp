@@ -1,0 +1,12 @@
+<!-- DIALOG ANGULAR MATERIAL -->
+<h1 mat-dialog-title>Eliminar héroe</h1>
+<div mat-dialog-content>
+  ¿Quieres eliminar a {{heroToDelete.name}} de la lista?
+</div>
+
+<!-- BOTONES -->
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary"
+  [mat-dialog-close]="true" cdkFocusInitial>Ok</button>
+  <button mat-raised-button mat-dialog-close>No</button>
+</div>

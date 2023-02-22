@@ -1,0 +1,8 @@
+section { flex-direction: column; }
+table { background-color: #f3f3f3; }
+.hero--image { max-height: 50px; border-radius: 50%; object-fit: cover;}
+.actions { display: flex; width: 100%; height: 100px; padding: 0 20px; justify-content: flex-start; align-items: center; }
+.actions--input { margin-right: 20px; }
+.actions--input mat-form-field { margin-top: 22px; }
+.actions--add button { height: 56px; }
+.spinner { display: flex; width: 100%; padding: 20px; background-color: #f3f3f3; justify-content: center;}

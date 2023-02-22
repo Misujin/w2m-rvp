@@ -1,0 +1,57 @@
+<!-- DIALOG ANGULAR MATERIAL -->
+<h1 mat-dialog-title>{{ isAddHero ? 'Añadir ' : 'Modificar ' }} héroe</h1>
+<div mat-dialog-content>
+  <!-- FORM GROUP -->
+  <form [formGroup]="formInstance">
+
+    <!-- id -->
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>Id</mat-label>
+        <input matInput type="text"
+        name="id" formControlName="id">
+        <mat-error *ngIf="
+        formInstance.controls['id']?.errors?.['required']">campo requerido</mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- nombre -->
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text"
+        name="name" formControlName="name">
+        <mat-error *ngIf="
+        formInstance.controls['name']?.errors?.['required']">campo requerido</mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- imagen -->
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>URL imagen</mat-label>
+        <input matInput type="text"
+        name="image" formControlName="image">
+        <mat-error *ngIf="
+        formInstance.controls['image']?.errors?.['required']">campo requerido</mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- colores -->
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>Colores</mat-label>
+        <input matInput type="text"
+        name="colors" formControlName="colors">
+        <mat-error *ngIf="
+        formInstance.controls['colors']?.errors?.['required']">campo requerido</mat-error>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+
+<!-- BOTONES -->
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" [disabled]="!formInstance.valid" (click)="saveHero()">{{ isAddHero ? 'Añadir ' : 'Modificar ' }}</button>
+  <button mat-raised-button mat-dialog-close>Cancelar</button>
+</div>

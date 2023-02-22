@@ -1,0 +1,5 @@
+header { display: flex; height: 80px; background-color: #1d2021; justify-content: center; align-items: center; }
+.navbar { display: 100%; }
+.navbar--list { display: flex; margin: 0; padding: 0; list-style: none; }
+.navbar--item a { margin: 0 30px; color: #FFFFFF; text-transform: uppercase; text-decoration: none; }
+.navbar--item a:hover { color: #ff5c21; }

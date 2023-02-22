@@ -1,0 +1,4 @@
+section { height: calc(100vh - 120px); }
+.about { display: flex; justify-content: center; align-items: center; }
+.about--card { margin: 40px; padding: 40px; background-color: #232728; border-radius: 10px; }
+.about--card p { color: #FFFFFF; }
